@@ -1,6 +1,7 @@
 import pytest
 import requests
 
+class BaseTest:
     @pytest.fixture(autouse=True)
     def setup_api_client(self):
         self.client = requests.Session()
