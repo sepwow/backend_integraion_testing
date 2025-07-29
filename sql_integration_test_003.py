@@ -30,7 +30,7 @@ class TestTransactionNotificationDBIntegration(BaseTest):
         )
         transaction = result.fetchone()
         assert transaction is not None, "Transaction not found in database"
-        assert transaction [0] == amount
+        assert transaction[0] == amount
         assert transaction[1] == currency
 
     def test_transaction_sends_notification(self):
