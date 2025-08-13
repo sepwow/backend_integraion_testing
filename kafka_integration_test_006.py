@@ -16,7 +16,7 @@ class BaseTest:
         self.user_id = 'USER123'
         yield
         self.client.close()
-        self.db_engine.dispose() # new commit
+        self.db_engine.dispose()
 
 
 class TestNotificationAuditDBIntegration(BaseTest):
